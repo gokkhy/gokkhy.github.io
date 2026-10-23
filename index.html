@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>권김현영 (Hyeon-young Kwon Kim)</title>
+<meta name="description" content="권김현영(김현영) 학술 CV. 전남대학교 전남광주인문사회연구원 민주주의미래연구소 학술연구교수. 젠더 정치와 민주주의, 성폭력과 반성폭력운동, 남성성 연구.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #5f6872;
+    --line: #e3e6ea;
+    --bg: #ffffff;
+    --bg-soft: #f6f7f8;
+    --accent: #1d5c4f;
+    --accent-soft: #e8f1ee;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.75;
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+
+  /* 상단 메뉴 */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,.96);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+  }
+  nav .inner {
+    max-width: 960px; margin: 0 auto; padding: 0 20px;
+    display: flex; align-items: center; gap: 20px; height: 56px; overflow-x: auto; white-space: nowrap;
+  }
+  nav .brand { font-weight: 700; color: var(--text); margin-right: auto; border: 0; }
+  nav a.item { color: var(--muted); font-size: 14.5px; border: 0; padding: 4px 0; }
+  nav a.item:hover { color: var(--accent); }
+
+  /* 첫 화면 */
+  header.hero {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+  }
+  header.hero .inner { max-width: 960px; margin: 0 auto; padding: 72px 20px 56px; }
+  header.hero h1 { font-size: 38px; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+  header.hero .en { color: var(--muted); font-size: 18px; margin-bottom: 20px; }
+  header.hero .pos { font-size: 18px; margin: 0 0 6px; }
+  header.hero .mail { margin: 0; color: var(--muted); }
+  .tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span {
+    background: var(--accent-soft); color: var(--accent);
+    padding: 4px 12px; border-radius: 999px; font-size: 14px;
+  }
+
+  main { max-width: 960px; margin: 0 auto; padding: 0 20px 80px; }
+  section { padding: 56px 0 8px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-size: 26px; margin: 0 0 24px; letter-spacing: -0.01em; }
+  h3 { font-size: 18px; margin: 32px 0 12px; color: var(--accent); }
+  h3:first-of-type { margin-top: 0; }
+
+  ul.list { list-style: none; padding: 0; margin: 0 0 24px; }
+  ul.list li {
+    padding: 8px 0 8px 16px; border-left: 2px solid var(--line); margin-bottom: 4px;
+  }
+  ul.list li:hover { border-left-color: var(--accent); }
+  .period { color: var(--muted); font-size: 14.5px; white-space: nowrap; }
+  .note { color: var(--muted); font-size: 14.5px; }
+
+  details { margin: 0 0 24px; }
+  details summary {
+    cursor: pointer; font-weight: 600; padding: 10px 14px;
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 6px;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: "펼치기 +"; float: right; color: var(--muted); font-weight: 400; font-size: 14px; }
+  details[open] summary::after { content: "접기 −"; }
+  details ul { margin-top: 12px; }
+
+  .link-btn {
+    display: inline-block; padding: 6px 14px; border: 1px solid var(--accent);
+    border-radius: 6px; font-size: 14.5px; margin: 4px 8px 4px 0;
+  }
+  .link-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  footer { background: var(--bg-soft); border-top: 1px solid var(--line); padding: 28px 20px; text-align: center; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 600px) {
+    header.hero h1 { font-size: 30px; }
+    header.hero .inner { padding: 48px 20px 40px; }
+    h2 { font-size: 22px; }
+    .period { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="#top">권김현영</a>
+    <a class="item" href="#about">소개</a>
+    <a class="item" href="#career">경력</a>
+    <a class="item" href="#books">저서</a>
+    <a class="item" href="#papers">논문</a>
+    <a class="item" href="#public">연재·미디어</a>
+    <a class="item" href="#projects">연구과제</a>
+    <a class="item" href="#teaching">강의·특강</a>
+    <a class="item" href="#hobby">좋아서 하는 일</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="inner">
+    <h1>권김현영 (김현영)</h1>
+    <div class="en">Hyeon-young Kwon Kim</div>
+    <p class="pos">전남대학교 전남광주인문사회연구원 민주주의미래연구소 학술연구교수</p>
+    <p class="mail">이메일 <a href="mailto:gokkhy@naver.com">gokkhy@naver.com</a></p>
+    <div class="tags">
+      <span>젠더 정치와 민주주의</span>
+      <span>젠더 및 섹슈얼리티 이론</span>
+      <span>남성성 연구</span>
+      <span>페미니스트 문화연구</span>
+      <span>미시서사 방법론</span>
+      <span>사회운동 주체론</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 소개 -->
+<section id="about">
+  <h2>세부전공 및 연구 관심분야</h2>
+  <p>젠더 정치와 민주주의, 젠더 및 섹슈얼리티 이론, 남성성 연구, 페미니스트 문화연구, 미시서사 방법론, 사회운동 주체론</p>
+
+  <h2 style="margin-top:40px;">학력</h2>
+  <ul class="list">
+    <li>이화여자대학교 대학원 여성학과 박사 <span class="period">(2024)</span></li>
+    <li>이화여자대학교 대학원 여성학과 석사 <span class="period">(2002)</span></li>
+    <li>성균관대학교 독어독문학과 학사 <span class="period">(1998)</span></li>
+  </ul>
+</section>
+
+<!-- 경력 -->
+<section id="career">
+  <h2>주요경력</h2>
+
+  <h3>학술 및 교육 경력</h3>
+  <ul class="list">
+    <li>전남대학교 전남광주인문사회연구원 민주주의미래연구소 학술연구교수 <span class="period">(2026.8–현재)</span></li>
+    <li>이화여자대학교 한국여성연구원 기획연구위원 <span class="period">(2020.3–2026.8)</span>, 연구위원 <span class="period">(2016.3–2018.12)</span></li>
+    <li>여성현실연구소 대표 <span class="period">(2021.2–2026.8)</span></li>
+    <li>성공회대학교 외래교수 <span class="period">(2013.3–2018.6, 2025.2–2026.8)</span></li>
+    <li>이화여자대학교 시간강사/강사 <span class="period">(2007, 2011, 2012, 2024.3–2026.8)</span></li>
+    <li>한국예술종합학교 객원교수 <span class="period">(2018.9–2020.2)</span></li>
+    <li>국민대학교, 명지대학교, 성균관대학교, 동덕여자대학교, 서울시립대학교, 연세대학교 시간강사 <span class="period">(2002–2013)</span></li>
+  </ul>
+
+  <h3>학회 및 시민사회·공익 활동</h3>
+  <ul class="list">
+    <li>서울국제여성영화제 집행위원 <span class="period">(2019.5–현재)</span></li>
+    <li>한국성폭력상담소 성문화 자문위원 <span class="period">(2007.3–현재)</span>, 성과인권팀·정보사업부 부장 <span class="period">(2003.5–2005.8)</span></li>
+    <li>한국성적소수자문화인권센터 기획위원 <span class="period">(2008.3–현재)</span></li>
+    <li>노회찬재단 이사 <span class="period">(2023.1–2025.2)</span></li>
+    <li>한국여성학회 이사 <span class="period">(2022.1–2024.2)</span></li>
+    <li>한국여성단체연합 혁신위원회 공동위원장 <span class="period">(2021.2–2021.10)</span></li>
+    <li>한국여성민우회 정책위원·자문위원 <span class="period">(2007.8–2020.2)</span></li>
+    <li>언니네트워크 출판편집팀장·편집장·운영위원 <span class="period">(2001.1–2007.12)</span></li>
+    <li>한국여성재단 기획홍보팀 대리 <span class="period">(2002.3–2003.4)</span></li>
+  </ul>
+
+  <h3>정부 및 공공기관 위원 활동</h3>
+  <ul class="list">
+    <li>서울시 위드유 직장 성희롱·성폭력 예방센터 운영위원 <span class="period">(2020.9–2023.8)</span></li>
+    <li>국가인권위원회 인권교육 전문위원 <span class="period">(2019.5–2023.2)</span></li>
+    <li>서울시교육청 민주시민교육위원회 자문위원 <span class="period">(2019.3–2023.2)</span></li>
+    <li>문화체육관광부 성평등 실무협의회 전문위원 <span class="period">(2019.3–2021.2)</span></li>
+    <li>한국여성인권진흥원 폭력예방교육 자문위원 <span class="period">(2017.9–2023.2)</span></li>
+    <li>한국여성정책연구원 연구정책 자문위원 <span class="period">(2017.9–2023.2)</span></li>
+    <li>여성가족부 성평등 의제 자문위원 <span class="period">(2017.9–2018.12)</span></li>
+  </ul>
+</section>
+
+<!-- 저서 -->
+<section id="books">
+  <h2>저서 및 편저</h2>
+
+  <h3>단독저서</h3>
+  <ul class="list">
+    <li>권김현영. 2024. 『수신인도 발신인도 아닌 씨씨』. 위즈덤하우스.</li>
+    <li>권김현영. 2021. 『여자들의 사회』. 휴머니스트.</li>
+    <li>권김현영. 2020. 『늘 그랬듯이 길을 찾아낼 것이다: 폭력의 시대를 넘는 페미니즘의 응답』. 휴머니스트.</li>
+    <li>권김현영. 2019. 『다시는 그전으로 돌아가지 않을 것이다: 진화하는 페미니즘』. 휴머니스트.</li>
+  </ul>
+
+  <h3>편저</h3>
+  <ul class="list">
+    <li>권김현영 편. 2018. 『피해와 가해의 페미니즘』. 교양인.</li>
+    <li>권김현영 편. 2017. 『한국 남성을 분석한다』. 교양인.</li>
+    <li>권김현영 편. 2011. 『남성성과 젠더』. 자음과모음.</li>
+    <li>언니네트워크(권김현영 외) 편. 2008. 『언니네 방 2』. 갤리온.</li>
+    <li>언니네트워크(권김현영 외) 편. 2007. 『언니네 방 1』. 갤리온.</li>
+  </ul>
+
+  <h3>해외 출간</h3>
+  <ul class="list">
+    <li><span lang="ja">クォンキム・ヒョンヨン 編. 2023. 『被害と加害のフェミニズム：＃MeToo以降を展望する』. 影本剛・ハン・ディディ 監訳, 金友子 ほか 訳. 解放出版社.</span> <span class="note">(『피해와 가해의 페미니즘』(교양인, 2018) 일본어판)</span></li>
+    <li><span lang="ja">鄭喜鎭 編. 2021. 『＃MeTooの政治学：コリア・フェミニズムの最前線』. 権金炫怜 ほか 著, 金李イスル 訳, 申琪榮 監修. 大月書店.</span> <span class="note">(『미투의 정치학』(교양인, 2019) 일본어판, 2021.10)</span></li>
+    <li>Kwon Kim, Hyun-young and John (Song Pae) Cho. 2012. "The Korean Gay and Lesbian Movement 1993–2008: From 'Identity' and 'Community' to 'Human Rights'." In <em>South Korean Social Movements: From Democracy to Civil Society</em> (Routledge Advances in Korean Studies). New York: Routledge. <span class="note">(영문 챕터)</span></li>
+  </ul>
+
+  <h3>공저</h3>
+  <details open>
+    <summary>공저 목록 (20권)</summary>
+    <ul class="list">
+      <li>권김현영 외. 2026. 『2026 소설, 한국을 말하다』. 은행나무.</li>
+      <li>권김현영 외. 2025. 『폭주하는 남성성』. 동녘.</li>
+      <li>권김현영 외. 2022. 『고양이를 부탁해: 20주년 아카이브』. 플레인.</li>
+      <li>권김현영 외. 2020. 『코로나 시대의 페미니즘』. 휴머니스트.</li>
+      <li>권김현영 외. 2020. 『우리는 자격 없는 여성들과 세상을 바꾼다』. 와온.</li>
+      <li>권김현영 외. 2019. 『미투의 정치학』. 교양인.</li>
+      <li>권김현영 외. 2018. 『더 나은 논쟁을 할 권리: 페미니스트 크리틱』. 휴머니스트.</li>
+      <li>권김현영 외. 2018. 『지금 여기 페미니즘×민주주의』. 교유서가.</li>
+      <li>권김현영 외. 2017. 『페미니스트 모먼트』. 그린비.</li>
+      <li>권김현영 외. 2017. 『대한민국 넷페미사』. 나무연필.</li>
+      <li>권김현영 외. 2017. 『양성평등에 반대한다』. 교양인.</li>
+      <li>권김현영 외. 2012. 『성의 권리, 성의 정치』. 자음과모음.</li>
+      <li>권김현영 외. 2011. 『성폭력 뒤집기』. 이매진.</li>
+      <li>권김현영 외. 2010. 『10대의 섹스, 유쾌한 섹슈얼리티』. 동녘.</li>
+      <li>권김현영 외. 2009. 『성폭력에 맞서다: 이론, 사례, 전망』. 한울아카데미.</li>
+      <li>권김현영 외. 2006. 『여행 좋아하세요?』. 또하나의문화.</li>
+      <li>권김현영 외. 2005. 『카메라를 든 여전사』. 아이공.</li>
+      <li>권김현영 외. 2001. 『20세기 여성사건사』. 여성신문사.</li>
+      <li>권김현영 외. 2001. 『페니스 파시즘』. 개마고원.</li>
+      <li>권김현영 외. 1999. 『여성의 일찾기, 세상바꾸기』. 또하나의문화.</li>
+    </ul>
+  </details>
+
+  <h3>해제</h3>
+  <ul class="list">
+    <li>권김현영. 2024. “해제.” 『코번트가든의 여자들』. 북트리거.</li>
+    <li>권김현영. 2023. “해제.” 『당신의 자리는 어디입니까: 페미니즘이 계급에 대해 말할 때』. 문학동네.</li>
+    <li>권김현영. 2022. “해제.” 『가부장제 깨부수기』. 아르떼.</li>
+    <li>권김현영. 2017. “해제.” 『모두를 위한 페미니즘』. 문학동네.</li>
+    <li>권김현영. 2016. “해제.” 『거리에 선 페미니즘: 8시간 28800초의 기록』. 궁리.</li>
+    <li>권김현영. 2016. “해제.” 『악어프로젝트』. 푸른지식.</li>
+    <li>권김현영. 2013. “해제.” 『하늘을 덮다: 민주노총 성폭력 사건의 진실』. 메이데이.</li>
+  </ul>
+</section>
+
+<!-- 논문 -->
+<section id="papers">
+  <h2>연구논문</h2>
+  <ul class="list">
+    <li>권김현영. 2026. “청년 담론의 정동 회로 분석: 상처 입은 남성성의 보편화 과정.” 『경제와 사회』 150: 14–62.</li>
+    <li>권김현영. 2026. “타인의 타자성을 견뎌내기: 인셀, 극우, 페미니스트, 성소수자가 함께 있는 여성학 강의실에서.” 『안과밖』 60: 252–282.</li>
+    <li>김현영, 민가영. 2025. “‘관계적 장소’로서의 여자대학의 의미에 대한 경험 연구.” 『페미니즘연구』 25(2): 337–380.</li>
+    <li>김현영. 2025. “페미니즘 대중화 시대, 반성폭력운동의 교착: 피해자-대리인 관계를 중심으로.” 『여성학논집』 42(1): 72–116.</li>
+    <li>김은실, 김현영. 2012. “1950년대 1공화국 국가 건설기 공적영역의 형성과 젠더 정치.” 『여성학논집』 29(1): 113–155.</li>
+    <li>Kwon, Insook, Dong-Ok Lee, Elli Kim, and Hyun-Young Kim. 2007. “Sexual Violence Among Men in the Military in South Korea.” <em>Journal of Interpersonal Violence</em> 22(8): 1024–1042.</li>
+    <li>권김현영. 2007. “평화의 정치학을 위한 모성적 사유: 남성중심적 안보개념에 대한 비판.” 『한국여성철학』 7: 55–82.</li>
+  </ul>
+
+  <h3 style="margin-top:32px;">계간지 및 학술문예지 비평·기고</h3>
+  <ul class="list">
+    <li>권김현영. 2025. “촛불에서 응원봉으로의 상징 전환: 사물, 장소, 주체의 변화.” 『문학들』 80(여름).</li>
+    <li>권김현영. 2019. “불평등 감각의 젠더차이.” 『창작과비평』 185(가을).</li>
+    <li>권김현영. 2018. “그 남자들의 여자문제.” 『황해문화』 101(겨울).</li>
+    <li>권김현영. 2018. “피해자중심주의는 여성주의적 원칙인가.” 『문학동네』 96(가을).</li>
+    <li>권김현영. 2018. “미투, 반성폭력운동의 윤리-정치적 전환.” 『문학동네』 95(여름).</li>
+    <li>권김현영, 백승헌, 이인영, 정두언. 2018. “개헌 문제, 어떻게 해야 하나.” (대담) 『창작과비평』 179(봄).</li>
+    <li>권김현영. 2017. “공백 사이를 읽어내기.” 『여성학논집』 34(2).</li>
+    <li>권김현영. 2015. “미성년자 의제강간, 무엇을 보호하는가.” 『인물과사상』 (11월호).</li>
+    <li>권김현영. 2013. “박근혜 시대에 여성 정치를 논하기.” 『계간 시작』 12(1).</li>
+    <li>권김현영. 2007. “민족주의 이념논쟁과 후기 식민 남성성: 해방전후사의 인식과 재인식을 둘러싼 논쟁을 중심으로.” 『문화과학』 49(봄).</li>
+    <li>권김현영. 2004. “성폭력 생존자 대회, ‘말하고싶다’가 ‘말하기싫다’를 이겼다.” 『월간말』 211(1월호).</li>
+    <li>권김현영. 2002. “병역의무의 성별정치학.” 『당대비평』 19(여름).</li>
+    <li>권김현영. 2001. “차이에 대해 말하기, 기억과 치유의 정치학을 위하여: 영페미니스트가 말하는 계급과 문화정체성.” 『당대비평』 15(여름).</li>
+    <li>권김현영. 2001. “순정만화, 여성들의 정서적 문화동맹.” 『여성과사회』 12.</li>
+    <li>권김현영. 2000. “군가선점 소동과 싸이버테러.” 『여성과사회』 11.</li>
+  </ul>
+</section>
+
+<!-- 연재·미디어 -->
+<section id="public">
+  <h2>연재·평론 및 대중활동</h2>
+
+  <h3>신문·매거진·온라인 연재</h3>
+  <ul class="list">
+    <li><strong>한겨레신문</strong> 칼럼 〈권김현영의 사건 이후〉 <span class="period">(2018.7–현재)</span></li>
+    <li><strong>여성신문</strong> 칼럼 〈권김현영의 S언니정치사〉 <span class="period">(2024.7–현재)</span></li>
+    <li><strong>채널예스</strong> 연재 〈권김현영의 여자들의 사회〉 <span class="period">(2020.8.5–2021.2.10)</span> <a href="https://m.ch.yes24.com/series?seriesid=167" target="_blank" rel="noopener">연재 모음</a></li>
+    <li><strong>씨네21</strong> 칼럼 〈디스토피아로부터〉 <span class="period">(2017.6–2019.7)</span></li>
+    <li><strong>한겨레21</strong> 칼럼 〈노땡큐〉 <span class="period">(2006.11–2007.11)</span></li>
+  </ul>
+
+  <h3>주요 언론 인터뷰</h3>
+  <ul class="list">
+    <li><strong>여성신문</strong> <span class="period">(2026.7.13)</span> “권김현영 ‘장윤기 사건이 드러낸 형님 문화… 폭력 묵인 구조 살펴야’.”</li>
+    <li><strong>프레시안</strong> <span class="period">(2026.5.8)</span> “‘미투 피해자’의 죽음, 참담하고 미안해… 동조한 조국 등은 사과 필요하다.”</li>
+    <li><strong>한겨레</strong> <span class="period">(2025.9.27)</span> “권김현영 ‘지난 10년 이전으로 다시는 돌아갈 수 없다’.”</li>
+    <li><strong>BBC 코리아</strong> <span class="period">(2024.11.25)</span> <a href="https://www.bbc.com/korean/articles/c4gm78wk8evo" target="_blank" rel="noopener">“동덕여대 사태로 본 ‘여대’의 의미.”</a></li>
+    <li><strong>Hawon Jung, <em>Flowers of Fire</em></strong> <span class="period">(2023)</span> 주요 인터뷰 참여. <em>Flowers of Fire: The Inside Story of South Korea’s Feminist Movement and What It Means for Women’s Rights Worldwide.</em> BenBella Books.</li>
+    <li><strong>여성신문</strong> <span class="period">(2021.10.31)</span> “[인터뷰-권김현영] 침묵으로는 아무것도 해결되지 않는다.”</li>
+    <li><strong>여성신문</strong> <span class="period">(2021.8.10)</span> “[인터뷰] 혁신안은 해결 아닌 시작… 여성연합 운동의 가능성 봤다.”</li>
+    <li><strong>BBC 코리아</strong> <span class="period">(2020.7.8)</span> <a href="https://www.bbc.com/korean/news-53333336" target="_blank" rel="noopener">“‘웰컴투비디오’ 사용자들은 어떤 처벌을 받았나.”</a></li>
+    <li><strong>BBC 코리아</strong> <span class="period">(2020.3.8)</span> <a href="https://www.bbc.com/korean/features-51787765" target="_blank" rel="noopener">“세계 여성의 날: 한국 사회의 여성 인권과 젠더 이슈.”</a></li>
+    <li><strong>채널예스</strong> <span class="period">(2019.12.2)</span> “권김현영 ‘책 읽는 시간의 고요함이 좋다’.”</li>
+    <li><strong>BBC 코리아</strong> <span class="period">(2019.3.15)</span> <a href="https://www.bbc.com/korean/news-47580473" target="_blank" rel="noopener">“버닝썬: 성범죄 사건, 피해자 꼭 드러나야 사건 해결가능한가.”</a></li>
+    <li><strong>서울신문</strong> <span class="period">(2018.8.20)</span> “[색다른 인터뷰] ‘입법 미비’ 이유로 비겁하게 숨은 법원… 1심은 안희정 아닌 김지은 재판이었다.”</li>
+    <li><strong>페미니스트 저널 일다</strong> <span class="period">(2016.3.23)</span> “남성중심의 한국 정치, 대안은 있는가?”</li>
+  </ul>
+
+  <h3>방송 및 유튜브 출연</h3>
+  <ul class="list">
+    <li><strong>유튜브 큐플래닛(Qplanet)</strong> 페미니스트+퀴어 시사정치 토크쇼 〈권손징악〉 공동진행 (권김현영·손희정) <span class="period">(2021–2026)</span><br>
+      <a class="link-btn" href="https://www.youtube.com/playlist?list=PL6lLSuPnAk-1Oxo-8M0ihWpkixUWzf1_X" target="_blank" rel="noopener">재생목록 바로가기</a></li>
+    <li><strong>JTBC 〈차이나는 클라스〉</strong> 161회 〈n번방을 키운 사회, 어떻게 끝낼까?〉 강연 출연 <span class="period">(2020.6.16)</span></li>
+  </ul>
+</section>
+
+<!-- 연구과제 -->
+<section id="projects">
+  <h2>연구과제 및 정책연구 실적</h2>
+  <ul class="list">
+    <li><strong>국방부 성희롱·성폭력 예방교육 표준 강의안</strong> <span class="period">(공동연구, 한국형사정책법무연구원, 2022)</span></li>
+    <li><strong>교육공무원을 위한 성인지교육 강의안</strong> <span class="period">(단독연구, 서울시교육청, 2021)</span></li>
+    <li><strong>기자 대상 성평등 교육 강의안</strong> <span class="period">(단독연구, 한국양성평등교육진흥원, 2020)</span></li>
+    <li><strong>플립드 러닝을 활용한 강의력 향상과정</strong> <span class="period">(공동연구, 한국양성평등교육진흥원, 2017)</span></li>
+    <li><strong>흡연고위험군 여성, 학교밖 청소년 금연서비스 전략개발</strong> <span class="period">(공동연구, 보건복지부·이화여자대학교 산학협력단, 2016)</span></li>
+    <li><strong>군 지휘관 대상 성희롱·성폭력 토론교육 매뉴얼</strong> <span class="period">(공동연구, 육군본부, 2015)</span></li>
+    <li><strong>성폭력 예방교육 강의안 매뉴얼</strong> <span class="period">(공동연구, 여성가족부, 2013)</span></li>
+    <li><strong>군 조직 내에서의 성인지력 향상에 관한 연구</strong> <span class="period">(공동연구, 국방부, 2007)</span></li>
+    <li><strong>군대 내 남성간 성폭력 연구</strong> <span class="period">(공동연구, 국가인권위원회·한국성폭력상담소, 2003–2004)</span></li>
+    <li><strong>1950년대 여성문화장의 정치경제학</strong> <span class="period">(연구보조원, 한국학술진흥재단·이화여자대학교 한국여성연구원, 2008–2009)</span></li>
+    <li><strong>전지구적 현상으로서의 신여성과 재현의 정치경제학</strong> <span class="period">(연구보조원, 한국학술진흥재단·이화여자대학교 한국여성연구원, 2006–2007)</span></li>
+  </ul>
+
+  <h3>수상</h3>
+  <ul class="list">
+    <li><strong>양성평등문화지원상 (개인 부문)</strong>, 국회 문화체육관광위원장상 <span class="period">(2020)</span></li>
+  </ul>
+</section>
+
+<!-- 강의·특강 -->
+<section id="teaching">
+  <h2>강의 및 특강</h2>
+
+  <h3>정규 및 기획 강좌</h3>
+  <ul class="list">
+    <li><strong>여성현실연구소</strong>: 여성학입문, 여성학개론 <span class="period">(2021–2026.8)</span></li>
+    <li><strong>이화여자대학교</strong>: 여성과 사회정의 <span class="period">(2012, 2024–2026.8)</span>, 여성학, 성문화연구 <span class="period">(2007, 2011)</span></li>
+    <li><strong>성공회대학교</strong>: 젠더와 정치 <span class="period">(2013–2018, 2025–2026.8)</span></li>
+    <li><strong>한국예술종합학교</strong>: 예술가의 젠더연습 <span class="period">(과목책임, 2018–2020)</span></li>
+    <li><strong>국민대학교</strong>: 여성학개론 <span class="period">(2012–2013)</span>, 현대사회와 여성 <span class="period">(2007–2010)</span>, 페미니즘과 정신분석학 <span class="period">(2003–2004)</span></li>
+    <li><strong>명지대학교</strong>: 여성과 심리, 여성과 정치 <span class="period">(2010–2012)</span></li>
+    <li><strong>성균관대학교</strong>: 성과 대중문화 <span class="period">(2007)</span></li>
+    <li><strong>동덕여자대학교</strong>: 성과 사랑 <span class="period">(2006)</span></li>
+    <li><strong>서울시립대학교</strong>: 성과 문화 <span class="period">(2002–2003)</span></li>
+  </ul>
+
+  <h3>해외 강연 및 심포지엄</h3>
+  <ul class="list">
+    <li><strong>일본 오차노미즈여자대학(お茶の水女子大学) 젠더연구소</strong> 국제심포지엄 〈＃MeTooの政治学：＃MeTooが残したフェミニズムの課題を考える〉 패널 발표 <span class="period">(2022.1.21)</span><br>
+      <span class="note">『미투의 정치학』 일본어판 출간 기념 온라인 국제심포지엄</span></li>
+    <li><strong>캐나다 토론토대학교 한국학센터</strong> 초청강연 “Metoo movement as the seeds of revolution” <span class="period">(2020.2.13)</span></li>
+  </ul>
+
+  <h3>특강 및 외부 강연</h3>
+  <ul class="list">
+    <li><strong>주요 강연 대상</strong>: 성교육·폭력예방교육 전문강사, 공공기관·대학·언론인·교원·시민사회단체 등<br>
+      <span class="note">주제: 성폭력과 반성폭력운동, 디지털 젠더정치와 남성성, 젠더와 민주주의, 성평등 및 폭력예방 교육</span></li>
+    <li><strong>주요 초청 및 출강 기관</strong>: 대학 및 대학원, 법원·국가인권위원회·교육청 등 공공기관, 언론사, 시민사회단체, 문학·영화제 등</li>
+  </ul>
+</section>
+
+<!-- 좋아서 하는 일 -->
+<section id="hobby">
+  <h2>좋아서 하는 일</h2>
+  <ul class="list">
+    <li><strong>페미-랩 〈별칭: 저수지〉</strong> 창립·운영 <span class="period">(2025.8–현재)</span><br>
+      <span class="note">매년 여름(입문), 겨울(개론) 여성학 강좌 수강생을 대상으로 운영하는 오픈카톡방. 북클럽 〈수북수북〉을 부정기적으로 운영하고, 페미니스트들이 서로의 관심 영역의 정보와 자료를 공유한다. 처음 들어온 사람은 (남태령의 밤에서 이루어진 방식의) 광장식 자기소개를 하는 분위기이다. 페미니즘 관련 다양한 강좌, 전시, 연극 및 공연 정보가 자주 올라오고 서명운동도 자주 공유되는 분위기이다.</span></li>
+    <li><strong>페미니스트 러닝크루 〈다뛰여〉</strong> 창립 <span class="period">(2024.10–현재)</span><br>
+      <span class="note">말이 통하는 페미니스트 친구를 만들고 내 표가 통하는 페미니스트 정치를 염원하며 함께 달리는 러닝크루. 매주 일요일 정기런부터 토요 오전 커피런, 남산런 등 다양한 러닝 벙개가 이루어진다. 여성들이 정치에 원하는 것이 무엇인지 내용을 모아 마라톤 대회에 몸자보를 하고 달리기도 하고, 올해의 정치뉴스를 꼽거나 긴급 비공개 집담회가 열리기도 한다. 무엇보다도, 달리기에 진심이다. 2026년 10월 25일 생애 첫 풀마라톤에 도전했다.</span><br>
+      <a class="link-btn" href="https://feminist-running-mates.github.io/Feminist-Running-Mates/" target="_blank" rel="noopener">소개 페이지</a>
+      <a class="link-btn" href="https://www.instagram.com/feministrunningmate/" target="_blank" rel="noopener">인스타그램</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Hyeon-young Kwon Kim · <a href="mailto:gokkhy@naver.com">gokkhy@naver.com</a>
+</footer>
+
+</body>
+</html>
